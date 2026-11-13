@@ -17,8 +17,9 @@ from pathlib import Path
 
 
 def store_path() -> Path:
-    if os.environ.get("DEADLINE_TRACKER_FILE"):
-        return Path(os.environ["DEADLINE_TRACKER_FILE"])
+    override = os.environ.get("DEADLINE_TRACKER_FILE")
+    if override:
+        return Path(override)
     home = Path(os.environ.get("HERMES_HOME") or Path.home() / ".hermes")
     return home / "deadlines.json"
 
