@@ -13,7 +13,7 @@ A Hermes Agent skill tap.
 ```bash
 hermes skills tap add ryavrma/hermes-skills
 hermes skills search deadline-tracker
-hermes skills install ryavrma/hermes-skills/deadline-tracker
+hermes skills install ryavrma/hermes-skills/skills/deadline-tracker --category productivity
 ```
 
 Tested with Hermes Agent v0.22.7.
